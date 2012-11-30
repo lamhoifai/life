@@ -1,0 +1,21 @@
+.window {
+	border: 1px solid #D2D2D2;
+}
+
+.panel {
+	padding-top:10px;
+	padding-left:15px;
+}
+
+.window-note, .window-call-history {
+	height:250px;
+}
+
+.window-active-call, .window-hold, .window-queue{
+	min-height:100px;
+}
+
+.window-second-number {
+	margin-top:10px;
+	margin-bottom: 10px;
+}
