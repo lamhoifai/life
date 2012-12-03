@@ -13,3 +13,4 @@ Configure::write('Role.agent', 3);
 
 Configure::write('Pokedex.source.url', 'http://pokemondb.net/pokedex/all');
 Configure::write('PokemonSkill.source.url', 'http://pokemondb.net/move/generation/1');
+Configure::write('PokedexPokemonSkill.source.url', 'http://pokemondb.net/pokedex/%s/moves/1');
