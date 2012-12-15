@@ -53,36 +53,6 @@ class Pokemon extends AppModel {
 	 * @var array
 	 */
 	public $hasAndBelongsToMany = array(
-		'PokedexSkill' => array(
-			'className' => 'PokemonSkill',
-			'joinTable' => 'pokedex_pokemon_skill',
-			'foreignKey' => 'pokemon_id',
-			'associationForeignKey' => 'pokemon_skill_id',
-			'unique' => 'keepExisting',
-			'conditions' => '',
-			'fields' => '',
-			'order' => '',
-			'limit' => '',
-			'offset' => '',
-			'finderQuery' => '',
-			'deleteQuery' => '',
-			'insertQuery' => ''
-		),
-		'PokemonType' => array(
-			'className' => 'PokemonType',
-			'joinTable' => 'pokedex_pokemon_type',
-			'foreignKey' => 'pokemon_id',
-			'associationForeignKey' => 'pokemon_type_id',
-			'unique' => 'keepExisting',
-			'conditions' => '',
-			'fields' => '',
-			'order' => '',
-			'limit' => '',
-			'offset' => '',
-			'finderQuery' => '',
-			'deleteQuery' => '',
-			'insertQuery' => ''
-		),
 		'PokemonSkill' => array(
 			'className' => 'PokemonSkill',
 			'joinTable' => 'pokemon_pokemon_skill',

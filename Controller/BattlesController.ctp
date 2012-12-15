@@ -29,14 +29,14 @@ App::uses('AppController', 'Controller');
  * @package       app.Controller
  * @link http://book.cakephp.org/2.0/en/controllers/pages-controller.html
  */
-class GamesController extends AppController {
+class BattlesController extends AppController {
 
 /**
  * Controller name
  *
  * @var string
  */
-	public $name = 'Games';
+	public $name = 'Battles';
 
 	public $components = array('AjaxHandler');
 /**

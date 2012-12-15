@@ -205,15 +205,4 @@ class User extends AppModel {
     public function getRoleList() {
         return $this->Role->find('list', array('order'=>array('name'=>'ASC')));
     }
-
-    /**
-     * getCallcenterList method
-     *
-     * List used by the Filter
-     *
-     * @return mixed
-     */
-    public function getCallcenterList() {
-        return $this->Callcenter->find('list', array('order'=>array('name'=>'ASC')));
-    }
 }

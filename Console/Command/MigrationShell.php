@@ -16,7 +16,10 @@ class MigrationShell extends AppShell {
 		'PokemonSkillCategory',
 		'PokedexPokemonSkill',
 		'PokedexPokemonType',
-		'PokemonSkill'
+		'PokemonSkill',
+		'Pokemon',
+		'Trainer',
+		'PokemonPokemonSkill'
 	);
 
 	public function main() {

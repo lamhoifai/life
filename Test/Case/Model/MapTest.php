@@ -1,11 +1,11 @@
 <?php
-App::uses('Trainer', 'Model');
+App::uses('Map', 'Model');
 
 /**
- * Trainer Test Case
+ * Map Test Case
  *
  */
-class TrainerTest extends CakeTestCase {
+class MapTest extends CakeTestCase {
 
 /**
  * Fixtures
@@ -13,10 +13,10 @@ class TrainerTest extends CakeTestCase {
  * @var array
  */
 	public $fixtures = array(
+		'app.map',
 		'app.trainer',
 		'app.user',
 		'app.role',
-		'app.map',
 		'app.pokemon',
 		'app.pokedex',
 		'app.pokemon_skill',
@@ -24,7 +24,9 @@ class TrainerTest extends CakeTestCase {
 		'app.pokemon_skill_category',
 		'app.pokedex_pokemon_skill',
 		'app.pokedex_pokemon_type',
-		'app.pokemon_pokemon_skill'
+		'app.pokemon_pokemon_skill',
+		'app.action',
+		'app.maps_action'
 	);
 
 /**
@@ -34,7 +36,7 @@ class TrainerTest extends CakeTestCase {
  */
 	public function setUp() {
 		parent::setUp();
-		$this->Trainer = ClassRegistry::init('Trainer');
+		$this->Map = ClassRegistry::init('Map');
 	}
 
 /**
@@ -43,7 +45,7 @@ class TrainerTest extends CakeTestCase {
  * @return void
  */
 	public function tearDown() {
-		unset($this->Trainer);
+		unset($this->Map);
 
 		parent::tearDown();
 	}

@@ -109,6 +109,13 @@ class AppController extends Controller {
     public $theme = 'bootstrap';
 	
 	/**
+     * currentUser is set to empty array by default
+     *
+     * @var string
+     */
+    public $currentUser = array();
+	
+	/**
      * getCurrentUser
 	 * 
 	 * check if the user is currently log in
@@ -190,7 +197,8 @@ class AppController extends Controller {
         }
 
         // For default settings name must be menu
-        $currentUser = $this->Session->read('Auth');
+        $this->currentUser = $this->Session->read('Auth');
+        $currentUser = $this->currentUser;
         $this->set(compact('menu','currentUser'));
 
         parent::beforeFilter();
