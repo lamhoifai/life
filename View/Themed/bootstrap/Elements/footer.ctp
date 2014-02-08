@@ -1,2 +1,0 @@
-<a href="http://www.mxtrio.com?utm_source=DRoviar&utm_medium=footer&utm_campaign=droviar"><img src="http://mxtrio.com/theme/wwwd/img/logo.png" class="pull-right" /></a>
-<br /><br /><br /><br /><br /><br />
